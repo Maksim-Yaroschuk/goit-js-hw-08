@@ -45,8 +45,6 @@ function restoreForm() {
   const savedForm = JSON.parse(localStorage.getItem(STORAGE_KEY));
 
     if (savedForm) {
-        console.log("запонюється форма")
-
         email.value = savedForm.email
         message.value = savedForm.message
     }
