@@ -13,9 +13,8 @@ continuePlayback()
 function setCurrentTime() {
     const onPlay = function (data) {
         localStorage.setItem(STORAGE_KEY, data.seconds);
-        console.log(currentTime)
     }
-    player.on('timeupdate', throttle(onPlay, 1500));
+    player.on('timeupdate', throttle(onPlay, 1000));
 }
 
 

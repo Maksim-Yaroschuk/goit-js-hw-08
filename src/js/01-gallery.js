@@ -4,8 +4,6 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 // Change code below this line
 
-console.log(galleryItems);
-
 const gallery = document.querySelector(".gallery")
 
 const galleryItem = galleryItems.map(({preview, original, description}) => {
